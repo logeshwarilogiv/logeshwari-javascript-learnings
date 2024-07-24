@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>1.Printing Hello world</h3c>
+    <h2 id="hello"></h2>
+    <style>
+        h3{ background-color: bisque;}
+    </style>
+       <hr> 
+    </div>
+    <script src="script.js"></script>
+
+   <!--add 2 numbers-->
+    <div>
+        <script>
+        function addNumbers() {
+            var num1 = parseFloat(document.getElementById("number1").value);
+            var num2 = parseFloat(document.getElementById("number2").value);
+            var sum = num1 + num2;
+            document.getElementById("result").innerHTML = "Sum: " + sum;
+        }
+    </script>
+
+    <h3>2.Add Two Numbers</h3>
+    <input type="text" id="number1" placeholder="enter first number">
+    <input type="text" id="number2" placeholder="Enter second number">
+    <button onclick="addNumbers()">Add</button>
+    <p id="result"></p>
+    </div>
+    <hr>
+
+    <!--Squareroot-->
+      <div>
+        <h3>3.Square root</h3>
+        <input type="number" id="num" placeholder="Enter a number">
+	<button onclick="calculateSquareRoot()">Calculate Square Root</button>
+	<div id="output0"></div>
+    </div>
+    <hr>
+     
+    <!--Even or Odd-->
+    <div>
+        <h3>4.Even or Odd Checker</h3>
+    <p>Enter a number:</p>
+    <input type="evenodd" id="numIn">
+    <button onclick="checkEvenOrOdd()">Check</button>
+    <p id="result3">Ans</p>
+    </div>
+    <hr>
+
+    <!--Generate random number-->
+    <div>
+        <h3>5. Generate a random number</h3>
+        <button onclick="generateRandomNumber()">Generate Random Number</button>
+    <p id="randomNumber"></p>
+    </div>
+    <hr>
+
+    <!--Largest number-->
+    <div>
+        <h3>6. Finding largest number</h3>
+        <p>Enter three numbers:</p>
+        <input type="number" id="largenum1" placeholder="First number">
+        <input type="number" id="largenum2" placeholder="Second number">
+        <input type="number" id="largenum3" placeholder="Third number">
+        <button onclick="findLargest()">Find Largest</button>
+        <p id="large"></p>
+    </div>
+    <hr>
+
+    <!--print my names for 20 times-->
+        <h3>7.Print my names for 20 times</h3>
+        <input type="name" id="nameContainer">
+        <button onclick="myname()">print</button>
+        <div id="output"></div><hr>
+
+        <!--program to check whether 2 numbers having same last digit-->
+        <div>
+            <h3> 8.Check whether 2 num having same last digit</h3>
+            <input type="number" id="val1">
+            <input type="number" id="val2">
+            <button onclick="checksamedigits()">checkdigit</button>
+            <div id="output2"></div>
+        </div>
+        <hr>
+
+        <!--Replace charachter of a Input String-->
+    <div>
+        <h3>9.Replace character of a String</h3>
+        <input type="text" id="input" placeholder="Enter string">
+	<input type="text" id="oldChar" placeholder="Enter character to replace">
+	<input type="text" id="newChar" placeholder="Enter new character">
+	<button onclick="replaceChar()">Replace</button>
+	<div id="output3"></div><hr>
+
+    <!--Append Two input arrays -->
+    <div>
+        <h3>10.Append Two Arrays</h3>
+        <input type="text" id="a" placeholder="Enter array a (e.g., 1,2,3)">
+        <input type="text" id="b" placeholder="Enter array b (e.g., 4,5,6)">
+        <button onclick="appendArrays()">Append and Print</button>
+        <div id="output4"></div>
+    </div>
+    </div>
+</body>
+</html>

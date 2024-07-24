@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Name 20 Times</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .name {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Print Name 20 Times</h1>
+    <div id="nameContainer"></div>
+
+    <script>
+        const name = "Your Name"; // Replace "Your Name" with your actual name
+        const container = document.getElementById('nameContainer');
+
+        for (let i = 0; i < 20; i++) {
+            const nameElement = document.createElement('div');
+            nameElement.className = 'name';
+            nameElement.textContent = name;
+            container.appendChild(nameElement);
+        }
+    </script>
+</body>
+</html>
